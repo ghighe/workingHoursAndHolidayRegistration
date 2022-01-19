@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calendar</title>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+    <script src="locale-ro.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="calendar-content">
+    <div id='calendar'></div>
+    </div>
+
+
+<!-- modal for when clicking a specific date-->
+
+
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <header class="w3-container">
+      <span onclick="closeModal()"
+      class="w3-button w3-display-topright">&times;</span>
+      <h2 id="eventWindow">Fereastra evenimente</h2>
+    </header>
+    <div id="event">
+    <select id="mySelect" onchange="eventChange()" style="display:block;">
+        <option value="">Alegeti tipul de eveniment</option>
+        <option value="Pontaj">Pontaj</option>
+        <option value="Concediu">Concediu Odihna(CO)</option>
+      </select>
+      <!--formular pontaj-->
+      <form class="w3-container" id="formPontaj">
+        <p id="msgPontaj"></p>
+        <label>Intrare</label>
+        <input class="w3-input" type="time" id="hourIn" name="hourIn">
+
+        <label>Iesire</label>
+        <input class="w3-input" type="time" id="hourOut" name="hourOut">
+
+        <footer class="w3-container">
+          <button  id="adaugaInterval" class="w3-btn w3-black" type="submit">Adaugati Intervalul orar</button>
+        </footer>
+
+    </form>
+    <!--formular concedii-->
+    <form class="w3-container" id="formConcedii">
+        <p id="msgConcediu"></p>
+        <label>Data inceput</label>
+        <input class="w3-input" type="date" id="startConcediu" name="startConcediu">
+
+        <label>Data Sfarsit</label>
+        <input class="w3-input" type="date" id="sfarsitConcediu" name="sfarsitConcediu">
+
+        <footer class="w3-container">
+          <button class="w3-btn w3-black" type="submit">Adaugati Concediul</button>
+        </footer>
+    </form>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<script src="calendar.js"></script>
+</body>
+
+</html>

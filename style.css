@@ -1,0 +1,61 @@
+html {
+    margin: 0px;
+    padding:0px;
+}
+
+body {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#calendar-content {
+    width:80%;
+    height: 50%;
+}
+
+.fc .fc-col-header-cell-cushion { /* needs to be same precedence */
+    padding-top: 5px; /* an override! */
+    padding-bottom: 5px; /* an override! */
+  }
+
+  .fc-direction-ltr .fc-button-group>.fc-button:not(:last-child) {
+    /* background-color: red; */
+
+  }
+
+  .w3-input {
+      width: 90%;
+  }
+
+  #event  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #event select {
+    padding:5px;
+  }
+
+  footer {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+  }
+
+  form {
+    display:none;
+  }
+
+  #eventWindow {
+    text-align: center;
+  }
+
+  .w3-modal-content {
+    padding-bottom: 15px;
+  }
