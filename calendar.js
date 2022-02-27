@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
       currentDate = info.dateStr;
       defaultStartHoliday.value = currentDate;
       console.log(eventObjDate);
-      if (eventObjDate.length === 0 || !eventObjDate.includes(currentDate)) {
+      if (!eventObjDate.includes(currentDate)) {
         displayModal();
       }
       calendar.unselect();
@@ -60,7 +60,9 @@ formPontaj.addEventListener('submit', (event) => {
     }
     closeModal();
   }
+
 })
+
 
 formConcedii.addEventListener('submit', (event) => {
   let inceputConcediu = event.target[0].value;

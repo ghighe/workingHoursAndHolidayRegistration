@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calendar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghighe/workingHoursAndHolidayRegistration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghighe/workingHoursAndHolidayRegistration/issues"
+  },
+  "homepage": "https://github.com/ghighe/workingHoursAndHolidayRegistration#readme",
+  "dependencies": {
+    "firebase": "^9.6.7"
+  }
+}
