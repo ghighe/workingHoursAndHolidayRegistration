@@ -1,15 +1,11 @@
-//Initialize Firebase in your app and create a Firebase App object:
-import { initializeApp } from 'firebase/app';
-
-const firebaseConfig = {
-  apiKey: "AIzaSyDQQkpqEMk7zO7ubfsoF0uF8etOjLLrgnI",
-  authDomain: "pontajbd.firebaseapp.com",
-  databaseURL: "https://pontajbd-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "pontajbd",
-  storageBucket: "pontajbd.appspot.com",
-  messagingSenderId: "696533925202",
-  appId: "1:696533925202:web:3fc058f1a9b9fa8c5a4e8b"
+  const firebaseConfig = {
+    apiKey: "AIzaSyDrg2j7Eo17kNzzseHMdw2496MmLesSVK0",
+    authDomain: "hourstracking-34bf7.firebaseapp.com",
+    databaseURL: "https://hourstracking-34bf7-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "hourstracking-34bf7",
+    storageBucket: "hourstracking-34bf7.appspot.com",
+    messagingSenderId: "685576383345",
+    appId: "1:685576383345:web:f731897d69cf7e5d5464d0"
   };
 
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
+  firebase.initializeApp(firebaseConfig);

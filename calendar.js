@@ -1,7 +1,19 @@
 "use strict";
 
 var calendar;
+let database;
 document.addEventListener('DOMContentLoaded', function () {
+  //call the database method
+  database = firebase.database();
+  //get a database referance
+  const ref = database.ref('score/');
+
+  const data =  {
+    name: 'Alex',
+    score:10
+  }
+  ref.set(data);
+
   const calendarEl = document.getElementById('calendar');
   calendar = new FullCalendar.Calendar(calendarEl, {
     height: 650,
